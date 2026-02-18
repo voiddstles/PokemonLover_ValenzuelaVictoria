@@ -48,7 +48,7 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintVertical_bias="0.0"
                 app:layout_goneMarginTop="60dp" />
 
             <TextView
@@ -184,7 +184,7 @@
                 android:text="Raichu N. - 0026"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintHorizontal_bias="0.743"
                 app:layout_constraintStart_toEndOf="@+id/tvArbok" />
 
             <ImageView
@@ -193,10 +193,10 @@
                 android:layout_height="151dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.79"
+                app:layout_constraintHorizontal_bias="0.848"
                 app:layout_constraintStart_toEndOf="@+id/imgArbok"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.988"
+                app:layout_constraintVertical_bias="0.945"
                 app:srcCompat="@drawable/raichu" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -206,7 +206,6 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
         android:layout_marginBottom="120dp"
         android:backgroundTint="#FFFFFF"
         android:text="Pikachu"
@@ -214,57 +213,67 @@
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
 
     <TextView
         android:id="@+id/tvNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
         android:layout_marginBottom="100dp"
         android:text="#025"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imgPokebola"
-        android:layout_width="286dp"
-        android:layout_height="196dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgPikachu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toEndOf="@+id/imgPikachu"
-        app:layout_constraintTop_toBottomOf="@+id/imgEstrella"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/pokebola" />
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imgEstrella"
         android:layout_width="33dp"
         android:layout_height="26dp"
-        android:layout_marginStart="188dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/imgPokebola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/imgPokebola"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estrella2" />
+
+    <ImageView
+        android:id="@+id/imgPokebola"
+        android:layout_width="286dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tvTitulo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/estrella2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgEstrella"
+        app:srcCompat="@drawable/pokebola" />
 
     <ImageView
         android:id="@+id/imgPikachu"
         android:layout_width="151dp"
         android:layout_height="218dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="109dp"
         android:elevation="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/imgPokebola"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toEndOf="@+id/tvNumero"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumero"
+        app:layout_constraintVertical_bias="0.129"
         app:srcCompat="@drawable/pikachu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
